@@ -1,0 +1,39 @@
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:link,
+*:visited,
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: $xxl;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  @media (max-width: $xl) {
+    padding: 2rem 1rem;
+  }
+  @media (max-width: $lg) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  @media (max-width: $md) {
+    padding: 1rem 0.5rem;
+  }
+}

@@ -1,0 +1,77 @@
+@import "./variables";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px 4px rgba(34, 60, 80, 0.12);
+  @media (max-width: $lg) {
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+  @media (max-width: $sm) {
+    min-width: 300px;
+  }
+}
+.headerform {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  input {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  textarea {
+    height: 100px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 6px;
+  }
+}
+.dragwrapper {
+  display: flex;
+  border-radius: 6px;
+  border: 3px dashed black;
+  margin-bottom: 2rem;
+  flex: 1 1 0;
+}
+.dragplace {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  flex: 1 1 0;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $secondary;
+  }
+}
+.deletebtn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border-radius: 6px;
+  background-color: $orange;
+  border: 2px solid black;
+  h1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+.deletebtn:hover {
+  background-color: rgb(190, 53, 3);
+}
